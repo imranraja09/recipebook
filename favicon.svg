@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="peachGrad" x1="8" y1="8" x2="24" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFA07A" />
+      <stop offset="50%" stop-color="#FF6B4A" />
+      <stop offset="100%" stop-color="#F04E23" />
+    </linearGradient>
+  </defs>
+  <!-- Fruit Body -->
+  <path d="M16 10C12 9.5 7 13 7 18.5C7 24 11.5 27.5 16 27.5C20.5 27.5 25 24 25 18.5C25 13 20 9.5 16 10Z" fill="url(#peachGrad)" />
+  <!-- Stem -->
+  <path d="M16 10.5C15.8 8.5 15.2 7 14.5 5.5" stroke="#6B3410" stroke-width="1.6" stroke-linecap="round" />
+  <!-- Green Leaf -->
+  <path d="M15.5 8C19 6 22.5 7 23 10.5C20 11.5 17 10 15.5 8Z" fill="#38A169" />
+</svg>
