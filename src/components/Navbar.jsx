@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-brand-link">
-          <img src="/favicon.svg" alt="RecipeBook Icon" className="navbar-logo-icon" />
+          <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="RecipeBook Icon" className="navbar-logo-icon" />
           <span className="navbar-brand-text">recipebook</span>
         </Link>
 
