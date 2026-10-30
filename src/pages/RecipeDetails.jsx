@@ -38,7 +38,9 @@ function RecipeDetails() {
             alt={recipe.title}
             className="recipe-details-image"
             onError={(e) => {
-              e.currentTarget.src = DEFAULT_RECIPE_IMAGE;
+              if (e.currentTarget.src !== DEFAULT_RECIPE_IMAGE) {
+                e.currentTarget.src = DEFAULT_RECIPE_IMAGE;
+              }
             }}
           />
           {recipe.category && (

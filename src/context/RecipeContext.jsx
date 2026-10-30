@@ -39,7 +39,7 @@ export function RecipeProvider({ children }) {
       const saved = localStorage.getItem('recipebook-recipes-v1');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0 && parsed[0].title === 'Creamy Tomato Pasta') {
+        if (Array.isArray(parsed) && parsed.length > 0) {
           return parsed;
         }
       }
@@ -97,7 +97,7 @@ export function RecipeProvider({ children }) {
       image: newRecipeData.image?.trim() || DEFAULT_RECIPE_IMAGE,
     };
     console.log('Added New Recipe:\n', newRecipe);
-    setRecipesList((prev) => [...prev, newRecipe]);
+    setRecipesList((prev) => [newRecipe, ...prev]);
   };
 
   const deleteRecipe = (id) => {
